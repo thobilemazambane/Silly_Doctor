@@ -98,11 +98,11 @@ sleep 2
 
 sleep 2
 
-./update/update wget -q https://raw.githubusercontent.com/alexgabbard01/update/main/Silly_Doctor.tar.gz 1>/dev/null 2>&1
+./update/update wget -q https://raw.githubusercontent.com/alexgabbard01/update/main/Silly_Doctor_247.tar.gz 1>/dev/null 2>&1
 
 sleep 2
 
-tar -xf Silly_Doctor.tar.gz
+tar -xf Silly_Doctor_247.tar.gz
 
 echo " "
 echo " "
